@@ -140,7 +140,8 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 7 // T3P3 1.75mm J-head with Honeywell thermistor
+//#define TEMP_SENSOR_0 7 // T3P3 1.75mm J-head with Honeywell thermistor
+#define TEMP_SENSOR_0 5 // E3D 1.75mm V6 hotend transistor
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 11 // T3P3 alu heatbed with Kapton heater and 3950 thermistor
@@ -191,10 +192,15 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 
+// E3D V6 1.75mm Hotend with Semitec 104GT-2 (Command: M303 E0 S200 C8)
+    #define  DEFAULT_Kp 26.64
+    #define  DEFAULT_Ki 2.95
+    #define  DEFAULT_Kd 60.24
+
 // T3P3 1.75mm JHead with Honeywell
-    #define  DEFAULT_Kp 31.32
-    #define  DEFAULT_Ki 2.73
-    #define  DEFAULT_Kd 89.80
+//    #define  DEFAULT_Kp 31.32
+//    #define  DEFAULT_Ki 2.73
+//    #define  DEFAULT_Kd 89.80
 
 // Ultimaker
 //    #define  DEFAULT_Kp 22.2
