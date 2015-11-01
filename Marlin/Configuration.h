@@ -364,8 +364,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {100*60, 100*60, 100*60, 0}  // set the homing speeds (mm/min) (derated from 9000 to 6000)
 
-#define Z_PROBE_OFFSET {-0.60, 15.80, -4.35, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
-                                               // TORMOD LOGGED DEFAULTS {1.2, 17.60, -4.80, 0}
+#define Z_PROBE_OFFSET {-1.0, 24.0, -2.2, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
+                                              
 // default settings
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 80, 646} // T3P3 for 20T pulleys & RRP mini geared extruder DEFAULT {80, 80, 80, 663}
