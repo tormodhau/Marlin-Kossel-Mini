@@ -852,7 +852,7 @@ void retract_z_probe() {
 
   // Move the nozzle below the print surface to push the probe up.
   feedrate = homing_feedrate[Z_AXIS]/10;
-  destination[Z_AXIS] = current_position[Z_AXIS] - 21.4; // DEFAULT - 30
+  destination[Z_AXIS] = current_position[Z_AXIS] - 21; // DEFAULT - 30
   prepare_move_raw();
 
   feedrate = homing_feedrate[Z_AXIS];
