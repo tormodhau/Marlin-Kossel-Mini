@@ -364,7 +364,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {100*60, 100*60, 100*60, 0}  // set the homing speeds (mm/min) (derated from 9000 to 6000)
 
-#define Z_PROBE_OFFSET {-1.0, 24.0, -1.9, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
+#define Z_PROBE_OFFSET {-1.0, 24.0, -2.1, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
                                               
 // default settings
 
@@ -403,9 +403,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
  //Filament management (added by T3P3 based on https://github.com/lajos/Marlin/blob/tantillus/Marlin)
 #define EASY_LOAD					
-#define BOWDEN_LENGTH 560
-#define LCD_PURGE_LENGTH 3				
-#define LCD_RETRACT_LENGTH 3			
+#define BOWDEN_LENGTH 370
+#define LCD_PURGE_LENGTH 10				
+#define LCD_RETRACT_LENGTH 10			
 #define LCD_PURGE_FEEDRATE 200		
 #define LCD_RETRACT_FEEDRATE 600
 #define LCD_LOAD_FEEDRATE 500		
@@ -414,7 +414,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
  
 // Preheat Constants
 #define PLA_PREHEAT_HOTEND_TEMP 195 // T3P3
-#define PLA_PREHEAT_HPB_TEMP 70 // T3P3: Set to 60 - 80C if you have a heated print bed
+#define PLA_PREHEAT_HPB_TEMP 65 // T3P3: Set to 60 - 80C if you have a heated print bed
 #define PLA_PREHEAT_FAN_SPEED 0   // [T3P3 No PWM fan] Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 245 // T3P3
