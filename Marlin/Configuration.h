@@ -364,7 +364,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {100*60, 100*60, 100*60, 0}  // set the homing speeds (mm/min) (derated from 9000 to 6000)
 
-#define Z_PROBE_OFFSET {-1.0, 24.0, -2.1, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
+
+/////-----HOWTO-----
+// Senk Z-verdien for å komme nærmere bed etter probing
+// Øk Z-verdien for å komme lengere unna bed etter probing
+#define Z_PROBE_OFFSET {-1.0, 24.0, -2.25, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
                                               
 // default settings
 
