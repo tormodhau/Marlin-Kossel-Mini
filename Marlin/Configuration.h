@@ -372,7 +372,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
                                               
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 80, 646} // T3P3 for 20T pulleys & RRP mini geared extruder DEFAULT {80, 80, 80, 663}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 80, 655} // T3P3 for 20T pulleys & RRP mini geared extruder DEFAULT {80, 80, 80, 663}
 #define DEFAULT_MAX_FEEDRATE          {1000, 1000, 1000, 800}    // (mm/sec) T3P3: defaults {200, 200, 200, 200} 
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,9000,9000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
