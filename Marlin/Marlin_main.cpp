@@ -845,9 +845,9 @@ void retract_z_probe() {
   destination[Z_AXIS] = current_position[Z_AXIS] + 40; // T3P3 Kossel Mini - DEFAULT + 40 
   prepare_move_raw();
 
-  destination[X_AXIS] = -57.0;  //DEFAULT-61
-  destination[Y_AXIS] = 57.2;   //DEFAULT 66
-  destination[Z_AXIS] = 24.0;   //DEFAULT 35
+  destination[X_AXIS] = -50.0;  //DEFAULT-61
+  destination[Y_AXIS] = 54.0;   //DEFAULT 66
+  destination[Z_AXIS] = 25.0;   //DEFAULT 35
   prepare_move_raw();
 
   // Move the nozzle below the print surface to push the probe up.
