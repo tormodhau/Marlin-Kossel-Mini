@@ -368,7 +368,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 /////-----HOWTO-----
 // Senk Z-verdien for å komme nærmere bed etter probing
 // Øk Z-verdien for å komme lengere unna bed etter probing
-#define Z_PROBE_OFFSET {-1.0, 24.0, -2.23, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
+#define Z_PROBE_OFFSET {-1.0, 24.0, -2.15, 0}  // X, Y, Z, E distance between hotend nozzle and deployed bed leveling probe. // T3P3. defaults {0, 13, -7.15, 0 }
+//-2.15 ok, -2.10 rett (2016-03-31)
                                               
 // default settings
 
